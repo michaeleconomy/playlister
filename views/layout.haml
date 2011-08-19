@@ -1,22 +1,12 @@
 %html
   %head
     %title playlister
-    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}  
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     %script{:src => "/js/jquery.dataTables.min.js"}
+    %script{:src => "/js/jquery.tools.min.js"}
+    %script{:src => "/js/main.js"}
     %link{:rel => "stylesheet", :href => "/css/demo_table.css"}
     %link{:rel => "stylesheet", :href => "/css/main.css"}
     %link{:rel => "stylesheet", :href => "/css/fonts.css"}
-    :javascript
-      $(function() {
-        $('table').dataTable( {
-          bPaginate: false
-        })
-      } )
   %body
-    %h1 playlister
     != yield
-    #footer
-      %a(href="http://www.michaeleconomy.com")
-        site by michael economy
-      %a(href="http://www.flickr.com/photos/vasta/357532726/in/photostream/")
-        photo by vasta

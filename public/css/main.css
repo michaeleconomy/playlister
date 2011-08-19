@@ -2,25 +2,90 @@
 
 body {
   color: #BD2A56;
-  background-color:black;
-  background-image:url(/images/record.jpg);
   font-family:'WalkwayObliqueRegular';
+  background-color:black;
+  text-align:center;
+  text-shadow: 1px 1px 1px #333;
+  font-size: 24px;
+}
+
+#main {
+  text-align:left;
+  background-image:url(/images/record.jpg);
   background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position:center;
-  width:400px;
+  width:1024px;
+  height:768px;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
 }
 
 h1 {
+  position:absolute;
+  left:40px;
+  top:30px;
   color: #F62169;
   font-size: 132px;
+  text-shadow: 2px 2px 2px #000;
+  margin: 0;
 }
 
+#about {
+  position:absolute;
+  left:400px;
+  top:300px;
+  width:400px;
+}
 
+#addForm {
+  position:absolute;
+  display:none;
+}
 
 a {
   color: #B39D4C;
 }
 a:hover {
   color: #F9FDB8;
+}
+
+
+button {
+  position:absolute;
+  left:400px;
+  top:400px;
+  
+  cursor: pointer;
+  color: white;
+  background: #F62169;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#BD2A56), to(#F62169));
+  background: -moz-linear-gradient(top, #BD2A56, #F62169);
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 2px #666;
+  -moz-box-shadow: 2px 2px 2px #666;
+  box-shadow: 2px 2px 2px #666;
+  border: 1px solid #FF4199;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size:24px;
+  padding: 3px 10px;
+  line-height: 2em;
+}
+
+#footer {
+  position:absolute;
+  right:40px;
+  bottom:12px;
+}
+#footer a {
+  padding-left:40px;
+}
+
+#addForm {
+  background:#444;
+  padding:30px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }

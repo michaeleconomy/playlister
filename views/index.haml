@@ -1,9 +1,25 @@
-How it works
-
-%form{:enctype => "multipart/form-data", :method => "post"}
-  %input{:name => "f", :type => "file"}
-  %input{:name => "upload", :type => "submit"}
+#main
+  %h1 playlister
+  #about
+    Convert your itunes playlist into beautiful well-formed HTML.
   
+  %button(rel="#addForm")
+    Convert My Playlist &raquo;
 
-%a(href="http://www.flickr.com/photos/vasta/357532726/in/photostream/")
-  photo by vasta
+  #addForm
+    To export your playlist from itunes:
+    %ol
+      %li open iTunes
+      %li click on the playlist
+      %li select file &gt; library &gt; export library
+      %li save the file with format 'unicode text'
+      %li click the button below and choose the file you just saved
+  
+    %form{:enctype => "multipart/form-data", :method => "post"}
+      %input{:name => "f", :type => "file"}
+    
+  #footer
+    %a(href="http://www.michaeleconomy.com")
+      site by michael economy
+    %a(href="http://www.flickr.com/photos/vasta/357532726/in/photostream/")
+      photo by vasta
