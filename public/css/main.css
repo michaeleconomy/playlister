@@ -1,0 +1,26 @@
+/* http://www.colourlovers.com/palette/1710392/Expressivity */
+
+body {
+  color: #BD2A56;
+  background-color:black;
+  background-image:url(/images/record.jpg);
+  font-family:'WalkwayObliqueRegular';
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  width:400px;
+}
+
+h1 {
+  color: #F62169;
+  font-size: 132px;
+}
+
+
+
+a {
+  color: #B39D4C;
+}
+a:hover {
+  color: #F9FDB8;
+}

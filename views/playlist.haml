@@ -1,0 +1,10 @@
+%table
+  %thead
+    %tr
+      - @headers.each do |h|
+        %th= h
+  %tbody
+    - @tracks.each do |t|
+      %tr
+        - t.each do |d|
+          %td= d
